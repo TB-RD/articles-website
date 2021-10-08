@@ -1,0 +1,22 @@
+<%- include("./partials/head.ejs")%>
+<form action="/add" method="POST" class="container">
+  <span class="des">Adding new article to the collection</span>
+  <hr />
+  <label for="name">Title of the article :</label>
+  <input autocomplete="off" type="text" id="name" name="name" required />
+  <label for="href">Source(link) :</label>
+  <input autocomplete="off" type="text" id="href" name="href" required />
+  <label for="type">Type of article :</label>
+  <input autocomplete="off" type="text" id="type" name="type" required />
+  <button class="submit">Add</button>
+</form>
+
+<div class="success">
+  <i class="far fa-check-circle fa-lg" id="spc"></i>
+  Added successfully
+</div>
+<div class="failure">
+  <i class="far fa-times-circle fa-lg" id="spc"></i>
+  Operation failed
+</div>
+<%- include("./partials/footer.ejs")%>

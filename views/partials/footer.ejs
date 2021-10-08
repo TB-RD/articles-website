@@ -1,0 +1,92 @@
+<script>
+    const btn = document.querySelector(".btn");
+    const nav = document.querySelector(".pages");
+    const sub = document.querySelector(".submit");
+    const success = document.querySelector(".success");
+    const enter = document.querySelector(".enter");
+    const name = document.querySelector(".name");
+    const names = document.querySelectorAll(".names");
+      const item1 = document.querySelector('.items1');
+      const item2 = document.querySelector('.items2');
+      const item3 = document.querySelector('.items3');
+      const item4 = document.querySelector('.items4');
+      const item5 = document.querySelector('.items5');
+        const num1 = document.querySelector('.num1');
+        const num2 = document.querySelector('.num2');
+        const num3 = document.querySelector('.num3');
+        const num4 = document.querySelector('.num4');
+        const num5 = document.querySelector('.num5');
+        const num6 = document.querySelector('.num6');
+        const num7 = document.querySelector('.num7');
+        const num8 = document.querySelector('.num8');
+        const num9 = document.querySelector('.num9');
+        const num10 = document.querySelector('.num10');
+        const num11 = document.querySelector('.num11');
+        const num12 = document.querySelector('.num12');
+
+item1.addEventListener('click', () => {
+          for (let i = 0; i < names.length; i++) {
+            names[i].style.display = "none"
+          }
+          enter.style.display = "block";
+          num1.style.display = "flex";
+          num2.style.display = "flex";
+          name.style.display = "flex";
+        })
+
+item2.addEventListener('click', () => {
+          for (let i = 0; i < names.length; i++) {
+            names[i].style.display = "none"
+          }
+          enter.style.display = "block";
+          num3.style.display = "flex";
+          name.style.display = "flex";
+          })
+
+item3.addEventListener('click', () => {
+  for (let i = 0; i < names.length; i++) {
+    names[i].style.display = "none"
+    }
+    enter.style.display = "block";
+    num4.style.display = "flex";
+    num5.style.display = "flex";
+    name.style.display = "flex";
+          })
+
+item4.addEventListener('click', () => {
+  for (let i = 0; i < names.length; i++) {
+    names[i].style.display = "none"
+    }
+    enter.style.display = "block";
+    num6.style.display = "flex";
+    num7.style.display = "flex";
+    num8.style.display = "flex";
+    num9.style.display = "flex";
+    name.style.display = "flex";
+          })
+
+item5.addEventListener('click', () => {
+  for (let i = 0; i < names.length; i++) {
+    names[i].style.display = "none"
+    }
+    enter.style.display = "block";
+    num10.style.display = "flex";
+    num11.style.display = "flex";
+    num12.style.display = "flex";
+    name.style.display = "flex";
+          })
+
+    btn.addEventListener("click", () => {
+      nav.classList.toggle("nav");
+    });
+
+    for (let i = 0; i < sub.length; i++) {
+      sub[i].addEventListener("click", function() {
+        success.style.display = "flex";
+    });
+  }
+
+  
+  </script>
+</body>
+</html>

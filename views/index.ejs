@@ -1,0 +1,34 @@
+<%- include("./partials/head.ejs")%>
+
+<div class="folders">
+<ul class="fol_ul">
+    <li class="items1 items"><%= urls[0].type %></li>
+    <li class="items2 items"><%= urls[2].type %></li>
+    <li class="items3 items"><%= urls[4].type %></li>
+    <li class="items4 items"><%= urls[6].type %></li>
+    <li class="items5 items"><%= urls[10].type %></li>
+    <%# - Array.from(new Set(urls.map((item) =>  ` <li class="items">${item.type}</li>`))).join("") %>
+</ul>
+</div>
+
+<div class="enter"></div>
+<div class="name">
+    <ul class="fol_ul">
+        <%# console.log(urls.map((it) => it.p1_type)) %>
+        <%# - Array.from(new Set(urls.map((item) =>  ` <li class="names">${item.name}</li>`))).join("") %>
+        <li class="names num1"><a target="_blank" class="li_href" href="<%= urls[0].href %>"><%= urls[0].name %></a></li>
+        <li class="names num2"><a target="_blank" class="li_href" href="<%= urls[1].href %>"><%= urls[1].name %></a></li>
+        <li class="names num3"><a target="_blank" class="li_href" href="<%= urls[2].href %>"><%= urls[2].name %></a></li>
+        <li class="names num4"><a target="_blank" class="li_href" href="<%= urls[3].href %>"><%= urls[3].name %></a></li>
+        <li class="names num5"><a target="_blank" class="li_href" href="<%= urls[4].href %>"><%= urls[4].name %></a></li>
+        <li class="names num6"><a target="_blank" class="li_href" href="<%= urls[5].href %>"><%= urls[5].name %></a></li>
+        <li class="names num7"><a target="_blank" class="li_href" href="<%= urls[6].href %>"><%= urls[6].name %></a></li>
+        <li class="names num8"><a target="_blank" class="li_href" href="<%= urls[7].href %>"><%= urls[7].name %></a></li>
+        <li class="names num9"><a target="_blank" class="li_href" href="<%= urls[8].href %>"><%= urls[8].name %></a></li>
+        <li class="names num10"><a target="_blank" class="li_href" href="<%= urls[9].href %>"><%= urls[9].name %></a></li>
+        <li class="names num11"><a target="_blank" class="li_href" href="<%= urls[10].href %>"><%= urls[10].name %></a></li>
+        <li class="names num12"><a target="_blank" class="li_href" href="<%= urls[11].href %>"><%= urls[11].name %></a></li>
+
+    </ul>
+</div>
+<%- include("./partials/footer.ejs")%>
