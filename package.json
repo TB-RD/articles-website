@@ -1,16 +1,16 @@
 {
-  "name": "my_articles",
+  "name": "articles-website",
   "version": "1.0.0",
   "description": " my articles website is where im putting all of my useful articles that i will need for later",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon app.js",
     "start": "node app.js"
   },
   "keywords": [],
   "author": "jaguar",
   "engines": {
-    "node": "16.11.0"
+    "node": "16.11.0",
+    "npm": "7.20.0"
   },
   "license": "MIT",
   "dependencies": {
