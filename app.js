@@ -8,6 +8,7 @@ const { requireAuth, checkUser } = require('./middleware/authMiddleware');
 const Links = require("./models/Links");
 
 const app = express();
+let PORT = process.env.PORT || 3000
 
 // middleware
 app.use(express.static('public'));
@@ -20,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 // database
 const dbURI = process.env.MONGO_DB;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(PORT))
   .catch((err) => console.log(err));
 
 // routes
