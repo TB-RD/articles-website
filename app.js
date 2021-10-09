@@ -8,7 +8,9 @@ const { requireAuth, checkUser } = require('./middleware/authMiddleware');
 const Links = require("./models/Links");
 
 const app = express();
-let PORT = process.env.PORT || 3000
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 // middleware
 app.use(express.static('public'));
@@ -20,9 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // database
 const dbURI = process.env.MONGO_DB;
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(PORT))
-  .catch((err) => console.log(err));
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // routes
 app.get('*', checkUser);
