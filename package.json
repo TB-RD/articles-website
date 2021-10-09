@@ -4,7 +4,8 @@
   "description": " my articles website is where im putting all of my useful articles that i will need for later",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon app.js"
+    "devStart": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "jaguar",
