@@ -24,6 +24,17 @@
         const num11 = document.querySelector('.num11');
         const num12 = document.querySelector('.num12');
 
+  btn.addEventListener("click", () => {
+    nav.classList.toggle("nav");
+    console.log("aaa")
+  });
+
+    for (let i = 0; i < sub.length; i++) {
+      sub[i].addEventListener("click", function() {
+        success.style.display = "flex";
+    });
+  }
+
 item1.addEventListener('click', () => {
           for (let i = 0; i < names.length; i++) {
             names[i].style.display = "none"
@@ -76,17 +87,6 @@ item5.addEventListener('click', () => {
     name.style.display = "flex";
           })
 
-    btn.addEventListener("click", () => {
-      nav.classList.toggle("nav");
-    });
-
-    for (let i = 0; i < sub.length; i++) {
-      sub[i].addEventListener("click", function() {
-        success.style.display = "flex";
-    });
-  }
-
-  
   </script>
 </body>
 </html>

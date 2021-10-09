@@ -1,14 +1,14 @@
 <%- include('partials/head'); -%>
 
-<form action="/login">
+<form action="/login" class="container">
   <h2>Login</h2>
-  <label for="email">Email</label>
+  <label for="email" class="info">Email</label>
   <input type="text" name="email"  />
   <div class="email error"></div>
-  <label for="password">Password</label>
+  <label for="password" class="info">Password</label>
   <input type="password" name="password"  />
   <div class="password error"></div>
-  <button class="sgn">login</button>
+  <button class="sgn submit">login</button>
 </form>
 
 <%- include('partials/footer'); -%>
