@@ -46,11 +46,3 @@
     );
     //    const items = document.querySelectorAll(".items");
   })*/
-
-  /*if(req.body.password === process.env.PASSWORD){
-    console.log('yo');
-    res.redirect('/');
-  }else{
-    console.log("hmm");
-    res.redirect('login')
-  }*/

@@ -24,9 +24,15 @@
         const num11 = document.querySelector('.num11');
         const num12 = document.querySelector('.num12');
 
+if(window.location.pathname === "/login"){
+  btn.style.display = "none"
+};
+
   btn.addEventListener("click", () => {
-    nav.classList.toggle("nav");
-    console.log("aaa")
+      nav.classList.toggle("nav");
+      setTimeout(() => {
+        nav.classList.remove("nav")
+      }, 5000);
   });
 
     for (let i = 0; i < sub.length; i++) {

@@ -13,10 +13,14 @@ body {
   cursor: pointer;
 }
 
+.fpages {
+  opacity: 0;
+  display: none;
+}
 .pages {
   width: 130px;
   height: 170px;
-  background-color: rgb(7, 105, 105);
+  background-color: rgb(5, 44, 44);
   color: rgb(255, 255, 255);
   border-radius: 5%;
   float: right;
@@ -29,7 +33,7 @@ a {
   position: relative;
   text-decoration: none;
   color: white;
-  margin: 10px 0 5px 5px;
+  margin: 5px 0 5px 5px;
   font-size: 35px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
@@ -86,7 +90,7 @@ input {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5em;
-  padding: 10px 16px;
+  padding: 10px 10px;
   letter-spacing: 2px;
   background-color: chartreuse;
 }
@@ -125,14 +129,23 @@ hr {
 .nav {
   width: 130px;
   height: 170px;
-  background-color: rgb(17, 17, 141);
+  background-color: rgb(16, 16, 78);
   color: rgb(255, 255, 255);
   border-radius: 5%;
   float: right;
   margin: 20px 5px 0 0;
   opacity: 1;
   display: block;
-  transition: opacity 500ms ease-in-out;
+  animation: nav-ani 1s;
+}
+
+@keyframes nav-ani {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes ani {
@@ -143,6 +156,7 @@ hr {
     opacity: 1;
   }
 }
+
 
 .items,
 .names {
@@ -224,4 +238,9 @@ ul {
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 60px;
+}
+
+.separator{
+  height: 2px;
+  width: 115px;
 }
